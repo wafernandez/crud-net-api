@@ -119,5 +119,10 @@ namespace ServiceRequests.DataAccess
 
             return Get(serviceRequest.Id);
         }
+
+        public void Clear()
+        {
+            _repository.Clear();
+        }
     }
 }
