@@ -1,0 +1,7 @@
+C:\Agustín\GitHub\crud-net-api\crud-net-api\ServiceRequestsAPI\ServiceRequests.DataAccess.Test\bin\Debug\net5.0\testhost.dll
+C:\Agustín\GitHub\crud-net-api\crud-net-api\ServiceRequestsAPI\ServiceRequests.DataAccess.Test\bin\Debug\net5.0\testhost.exe
+C:\Agustín\GitHub\crud-net-api\crud-net-api\ServiceRequestsAPI\ServiceRequests.DataAccess.Test\bin\Debug\net5.0\Microsoft.TestPlatform.CoreUtilities.dll
+C:\Agustín\GitHub\crud-net-api\crud-net-api\ServiceRequestsAPI\ServiceRequests.DataAccess.Test\bin\Debug\net5.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Agustín\GitHub\crud-net-api\crud-net-api\ServiceRequestsAPI\ServiceRequests.DataAccess.Test\bin\Debug\net5.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+C:\Agustín\GitHub\crud-net-api\crud-net-api\ServiceRequestsAPI\ServiceRequests.DataAccess.Test\bin\Debug\net5.0\Microsoft.TestPlatform.CommunicationUtilities.dll
+C:\Agustín\GitHub\crud-net-api\crud-net-api\ServiceRequestsAPI\ServiceRequests.DataAccess.Test\bin\Debug\net5.0\Microsoft.TestPlatform.CrossPlatEngine.dll

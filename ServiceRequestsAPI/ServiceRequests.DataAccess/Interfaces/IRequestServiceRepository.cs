@@ -21,5 +21,7 @@ namespace ServiceRequests.DataAccess
         void Delete(Guid id);
 
         ServiceRequest Update(ServiceRequest serviceRequest);
+
+        public void Clear();
     }
 }

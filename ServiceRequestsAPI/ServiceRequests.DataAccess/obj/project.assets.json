@@ -35,11 +35,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Agustín\\MajorKey\\ServiceRequest\\ServiceRequestsAPI\\ServiceRequests.DataAccess\\ServiceRequests.DataAccess.csproj",
+      "projectUniqueName": "C:\\Agustín\\GitHub\\crud-net-api\\crud-net-api\\ServiceRequestsAPI\\ServiceRequests.DataAccess\\ServiceRequests.DataAccess.csproj",
       "projectName": "ServiceRequests.DataAccess",
-      "projectPath": "C:\\Agustín\\MajorKey\\ServiceRequest\\ServiceRequestsAPI\\ServiceRequests.DataAccess\\ServiceRequests.DataAccess.csproj",
+      "projectPath": "C:\\Agustín\\GitHub\\crud-net-api\\crud-net-api\\ServiceRequestsAPI\\ServiceRequests.DataAccess\\ServiceRequests.DataAccess.csproj",
       "packagesPath": "C:\\Users\\agustin.fernandez\\.nuget\\packages\\",
-      "outputPath": "C:\\Agustín\\MajorKey\\ServiceRequest\\ServiceRequestsAPI\\ServiceRequests.DataAccess\\obj\\",
+      "outputPath": "C:\\Agustín\\GitHub\\crud-net-api\\crud-net-api\\ServiceRequestsAPI\\ServiceRequests.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -63,8 +63,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Agustín\\MajorKey\\ServiceRequest\\ServiceRequestsAPI\\ServiceRequests.BusinessLogic\\ServiceRequests.BusinessLogic.csproj": {
-              "projectPath": "C:\\Agustín\\MajorKey\\ServiceRequest\\ServiceRequestsAPI\\ServiceRequests.BusinessLogic\\ServiceRequests.BusinessLogic.csproj"
+            "C:\\Agustín\\GitHub\\crud-net-api\\crud-net-api\\ServiceRequestsAPI\\ServiceRequests.BusinessLogic\\ServiceRequests.BusinessLogic.csproj": {
+              "projectPath": "C:\\Agustín\\GitHub\\crud-net-api\\crud-net-api\\ServiceRequestsAPI\\ServiceRequests.BusinessLogic\\ServiceRequests.BusinessLogic.csproj"
             }
           }
         }
