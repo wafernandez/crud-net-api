@@ -24,16 +24,16 @@ namespace ServiceRequests.WebAPI.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetAll()
+        public ActionResult<IEnumerable<ServiceRequest>> GetAll()
         {
             try
             {
                 if (_requestServiceRepository.IsEmpty())
                 {
-                    return StatusCode(204, "Service Requests list is empty");
+                    return NoContent();
                 }
 
-                return StatusCode(200, _requestServiceRepository.GetAll());
+                return Ok(_requestServiceRepository.GetAll());
             }
             catch (Exception ex)
             {
@@ -42,15 +42,15 @@ namespace ServiceRequests.WebAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult Get(string id)
+        public ActionResult<ServiceRequest> Get(string id)
         {
             try
             {
-                return StatusCode(200, _requestServiceRepository.Get(new Guid(id)));
+                return Ok(_requestServiceRepository.Get(new Guid(id)));
             }
             catch (ServiceRequestNotFoundException notFoundEx)
             {
-                return StatusCode(404, notFoundEx.Message);
+                return NotFound(notFoundEx.Message);
             }
             catch (Exception ex)
             {
@@ -59,15 +59,16 @@ namespace ServiceRequests.WebAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(ServiceRequest newServiceRequestData)
+        public ActionResult<ServiceRequest> Create(ServiceRequest newServiceRequestData)
         {
             try
             {
-                return StatusCode(201, _requestServiceRepository.Add(newServiceRequestData));
+                ServiceRequest added = _requestServiceRepository.Add(newServiceRequestData);
+                return Created($"~api/employees/{added.Id}", added);
             }
             catch (InvalidServiceRequestDataException invalidDataEx)
             {
-                return StatusCode(400, invalidDataEx.Message);
+                return BadRequest(invalidDataEx.Message);
             }
             catch (Exception ex)
             {
@@ -76,7 +77,7 @@ namespace ServiceRequests.WebAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update(string id, ServiceRequest serviceRequestData)
+        public ActionResult<ServiceRequest> Update(string id, ServiceRequest serviceRequestData)
         {
             try
             {
@@ -91,15 +92,15 @@ namespace ServiceRequests.WebAPI.Controllers
                         $"Final status is {updated.CurrentStatus}");
                 }
 
-                return StatusCode(200, updated);
+                return Ok(updated);
             }
             catch (InvalidServiceRequestDataException invalidDataEx)
             {
-                return StatusCode(400, invalidDataEx.Message);
+                return BadRequest(invalidDataEx.Message);
             }
             catch (ServiceRequestNotFoundException notFoundEx)
             {
-                return StatusCode(404, notFoundEx.Message);
+                return NotFound(notFoundEx.Message);
             }
             catch (Exception ex)
             {
@@ -108,17 +109,17 @@ namespace ServiceRequests.WebAPI.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Delete(string id)
+        public ActionResult Delete(string id)
         {
             try
             {
                 _requestServiceRepository.Delete(new Guid(id));
                 
-                return StatusCode(201);
+                return Accepted();
             }
             catch (ServiceRequestNotFoundException notFoundEx)
             {
-                return StatusCode(404, notFoundEx.Message);
+                return NotFound(notFoundEx.Message);
             }
             catch (Exception ex)
             {

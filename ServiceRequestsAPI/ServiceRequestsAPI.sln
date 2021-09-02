@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceRequests.WebAPI", "ServiceRequests.WebAPI\ServiceRequests.WebAPI.csproj", "{631ABCCB-AC99-41D6-A6A6-49385D73A16B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceRequests.WebAPI", "ServiceRequests.WebAPI\ServiceRequests.WebAPI.csproj", "{631ABCCB-AC99-41D6-A6A6-49385D73A16B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceRequests.BusinessLogic", "ServiceRequests.BusinessLogic\ServiceRequests.BusinessLogic.csproj", "{DFA048F5-021C-4382-98ED-98E78E55C347}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceRequests.BusinessLogic", "ServiceRequests.BusinessLogic\ServiceRequests.BusinessLogic.csproj", "{DFA048F5-021C-4382-98ED-98E78E55C347}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceRequests.DataAccess", "ServiceRequests.DataAccess\ServiceRequests.DataAccess.csproj", "{B81B95E9-898B-42A1-A32D-E9DE41196416}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceRequests.DataAccess", "ServiceRequests.DataAccess\ServiceRequests.DataAccess.csproj", "{B81B95E9-898B-42A1-A32D-E9DE41196416}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceRequests.Utilities", "ServiceRequests.Utilities\ServiceRequests.Utilities.csproj", "{5247D686-05C6-4C59-8AF0-E3AD07F6336F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceRequests.Utilities", "ServiceRequests.Utilities\ServiceRequests.Utilities.csproj", "{5247D686-05C6-4C59-8AF0-E3AD07F6336F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceRequests.DataAccess.Test", "ServiceRequests.DataAccess.Test\ServiceRequests.DataAccess.Test.csproj", "{6ED1AC8B-CD3A-41E3-A688-F5C95D5784D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceRequests.BusinessLogic.Test", "ServiceRequests.BusinessLogic.Test\ServiceRequests.BusinessLogic.Test.csproj", "{19239E72-0673-46D4-BD2C-0BE04B22EE41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceRequests.WebAPI.Test", "ServiceRequests.WebAPI.Test\ServiceRequests.WebAPI.Test.csproj", "{70C5ED5A-CB67-4578-97AD-FEFAE51F7198}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{5247D686-05C6-4C59-8AF0-E3AD07F6336F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5247D686-05C6-4C59-8AF0-E3AD07F6336F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5247D686-05C6-4C59-8AF0-E3AD07F6336F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6ED1AC8B-CD3A-41E3-A688-F5C95D5784D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED1AC8B-CD3A-41E3-A688-F5C95D5784D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED1AC8B-CD3A-41E3-A688-F5C95D5784D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED1AC8B-CD3A-41E3-A688-F5C95D5784D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19239E72-0673-46D4-BD2C-0BE04B22EE41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19239E72-0673-46D4-BD2C-0BE04B22EE41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19239E72-0673-46D4-BD2C-0BE04B22EE41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19239E72-0673-46D4-BD2C-0BE04B22EE41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70C5ED5A-CB67-4578-97AD-FEFAE51F7198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70C5ED5A-CB67-4578-97AD-FEFAE51F7198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70C5ED5A-CB67-4578-97AD-FEFAE51F7198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70C5ED5A-CB67-4578-97AD-FEFAE51F7198}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
